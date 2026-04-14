@@ -1,0 +1,1 @@
+- turn logo text into an actual image for accesability
