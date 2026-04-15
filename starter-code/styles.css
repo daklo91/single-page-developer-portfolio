@@ -38,6 +38,10 @@ header {
   align-items: center;
 }
 
+.some-links a {
+  color: var(--color-primary);
+}
+
 .logo {
   line-height: 32px;
   font-family: "Space Grotesk", sans-serif;
@@ -72,7 +76,7 @@ header {
   display: block;
   /* float: right; */
   /* right: 0; */
-  right: -45px;
+  right: -65px;
   max-width: 129px;
   align-self: flex-end;
 }
@@ -93,4 +97,56 @@ header {
 
 .profile-picture img {
   width: 100%;
+}
+
+.hero-details {
+  padding: 0 16px;
+}
+
+h1 {
+  line-height: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-primary);
+  letter-spacing: -1.14px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1 > span {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 4px;
+}
+
+#hero-section p {
+  text-align: center;
+  line-height: 26px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-primary-muted);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+#hero-section a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  text-decoration-color: var(--color-accent);
+  line-height: 26px;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.29px;
+  text-decoration-thickness: 2px;
+}
+
+#hero-section a:hover {
+  color: var(--color-accent);
 }
