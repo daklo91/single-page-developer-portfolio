@@ -75,6 +75,7 @@ header {
   height: 100%;
   width: 100%;
   justify-content: space-between;
+  overflow-x: clip;
 }
 
 .rings-detail {
@@ -87,11 +88,8 @@ header {
 
 .circle-detail {
   position: relative;
-  /* left: -265px; */
   z-index: 10;
   display: block;
-  /* float: right; */
-  /* right: 0; */
   right: -65px;
   max-width: 129px;
   align-self: flex-end;
@@ -198,10 +196,11 @@ h1 > span {
   margin-bottom: 1px;
 }
 
-.rings-detail--skills-container {
+.rings-detail-skills-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  overflow-x: clip;
 }
 
 .rings-detail-skills {
@@ -330,10 +329,12 @@ h1 > span {
   padding-left: 24px;
   width: 100%;
   margin-bottom: 32px;
+  box-sizing: border-box;
 }
 
 #contact-name:focus,
-#contact-email:focus {
+#contact-email:focus,
+#contact-message:focus {
   border-color: var(--color-accent);
 }
 
@@ -362,6 +363,11 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: var(--color-accent);
+}
+
+form {
+  position: relative;
+  z-index: 20;
 }
 
 .rings-detail-contact {
