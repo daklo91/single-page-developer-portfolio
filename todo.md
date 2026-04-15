@@ -1,1 +1,2 @@
 - turn logo text into an actual image for accesability
+- clean up css when done, might use AI
