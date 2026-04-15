@@ -224,13 +224,36 @@
         fill in the form, and I’ll get back to you as soon as possible.
       </p>
       <!-- Labels does not exist in the design. But let the labels be for now. They could be useful for accesability! -->
-      <label for="contact-name">Name</label
-      ><input type="text" id="contact-name" name="contact-name" />
-      <label for="contact-email">Email</label
-      ><input type="email" id="contact-email" name="contact-email" />
-      <label for="contact-message">Message</label
-      ><input type="text" id="contact-message" name="contact-message" />
-      <input type="submit" value="Send message" />
+      <form>
+        <label class="sr-only" for="contact-name">Name</label
+        ><input
+          placeholder="NAME"
+          type="text"
+          id="contact-name"
+          name="contact-name"
+          required
+        />
+        <label class="sr-only" for="contact-email">Email</label
+        ><input
+          placeholder="EMAIL"
+          type="email"
+          id="contact-email"
+          name="contact-email"
+          required
+        />
+        <label class="sr-only" for="contact-message">Message</label
+        ><textarea
+          placeholder="MESSAGE"
+          type="text"
+          id="contact-message"
+          name="contact-message"
+          required
+        ></textarea>
+        <input type="submit" value="SEND MESSAGE" />
+      </form>
+      <div class="rings-detail-contact">
+        <img src="./assets/images/pattern-rings.svg" alt="" />
+      </div>
     </section>
     <footer>adamkeyes</footer>
   </body>
