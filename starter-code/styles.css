@@ -134,6 +134,10 @@ h1 > span {
   text-decoration-thickness: 4px;
 }
 
+.h1-br {
+  display: none;
+}
+
 #hero-section {
   margin-bottom: 92px;
 }
@@ -390,4 +394,74 @@ footer {
   position: absolute;
   width: 100%;
   background-color: var(--color-background-light);
+}
+
+@media screen and (min-width: 768px) {
+  /* SIST: fikser header for tablet */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+
+  .logo {
+    margin-left: 30px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+  }
+
+  .some-links {
+    margin-right: 30px;
+  }
+
+  .profile-picture {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  }
+
+  h1 {
+    line-height: 72px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--color-primary);
+    letter-spacing: -2.05px;
+    font-weight: 700;
+    font-size: 72px;
+    text-align: start;
+    max-width: 443px;
+    margin-bottom: 60px;
+  }
+
+  .h1-br {
+    display: block;
+  }
+
+  .hero-details {
+    padding: 0 32px;
+  }
+
+  #hero-section p {
+    text-align: left;
+    max-width: 403px;
+    margin-bottom: 34px;
+  }
+
+  #hero-section .contact-me-link {
+    margin: 0;
+  }
+
+  #hero-section picture {
+    max-width: 322px;
+  }
+
+  #hero-section .rings-detail {
+    top: 85px;
+    left: -270px;
+  }
 }
