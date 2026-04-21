@@ -237,40 +237,41 @@
     </section>
 
     <section id="contact-section">
-      <h2>Contact</h2>
-      <p>
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-      <!-- Labels does not exist in the design. But let the labels be for now. They could be useful for accesability! -->
-      <form>
-        <label class="sr-only" for="contact-name">Name</label
-        ><input
-          placeholder="NAME"
-          type="text"
-          id="contact-name"
-          name="contact-name"
-          required
-        />
-        <label class="sr-only" for="contact-email">Email</label
-        ><input
-          placeholder="EMAIL"
-          type="email"
-          id="contact-email"
-          name="contact-email"
-          required
-        />
-        <label class="sr-only" for="contact-message">Message</label
-        ><textarea
-          placeholder="MESSAGE"
-          type="text"
-          id="contact-message"
-          name="contact-message"
-          rows="4"
-          required
-        ></textarea>
-        <input type="submit" value="SEND MESSAGE" />
-      </form>
+      <div class="contact-section-container">
+        <h2>Contact</h2>
+        <p>
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form>
+          <label class="sr-only" for="contact-name">Name</label
+          ><input
+            placeholder="NAME"
+            type="text"
+            id="contact-name"
+            name="contact-name"
+            required
+          />
+          <label class="sr-only" for="contact-email">Email</label
+          ><input
+            placeholder="EMAIL"
+            type="email"
+            id="contact-email"
+            name="contact-email"
+            required
+          />
+          <label class="sr-only" for="contact-message">Message</label
+          ><textarea
+            placeholder="MESSAGE"
+            type="text"
+            id="contact-message"
+            name="contact-message"
+            rows="4"
+            required
+          ></textarea>
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
+      </div>
       <div class="rings-detail-contact">
         <img src="./assets/images/pattern-rings.svg" alt="" />
       </div>

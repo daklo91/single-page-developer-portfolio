@@ -517,4 +517,16 @@ footer {
   .project-links {
     margin-bottom: 68px;
   }
+
+  #contact-section {
+    padding-bottom: 130px;
+  }
+
+  .contact-section-container {
+    max-width: 445px;
+    margin: auto;
+  }
+  .rings-detail-contact {
+    top: -60px;
+  }
 }
