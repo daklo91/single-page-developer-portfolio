@@ -453,6 +453,10 @@ footer {
     text-align: left;
     max-width: 403px;
     margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: 500;
   }
 
   #hero-section .contact-me-link {
@@ -544,5 +548,64 @@ footer {
   .footer-container span,
   .footer-container div {
     margin: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    header {
+      margin-bottom: 127px;
+    }
+
+    header .logo {
+      margin-left: 165px;
+    }
+
+    header .some-links {
+      margin-right: 195px;
+    }
+
+    .hero-details {
+      padding-left: 165px;
+      padding-right: 165px;
+    }
+
+    .h1-br {
+      display: none;
+    }
+
+    h1 {
+      max-width: 710px;
+      margin-bottom: 43px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      color: var(--color-primary);
+    }
+
+    #hero-section {
+      margin-bottom: 230px;
+    }
+
+    #hero-section picture {
+      max-width: 445px;
+    }
+
+    .profile-picture {
+      right: 165px;
+    }
+
+    .circle-detail {
+      right: 385px;
+      bottom: 70px;
+    }
+
+    #hero-section .rings-detail {
+      left: 70px;
+    }
+
+    #hero-section p {
+      margin-bottom: 66px;
+    }
   }
 }
