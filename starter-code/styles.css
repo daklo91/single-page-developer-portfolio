@@ -607,5 +607,22 @@ footer {
     #hero-section p {
       margin-bottom: 66px;
     }
+
+    #skills-section {
+      margin: 0 165px;
+    }
+
+    .skills-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .rings-detail-skills {
+      left: 239px;
+      top: -100px;
+    }
+
+    #project-section {
+      margin-top: 140px;
+    }
   }
 }
