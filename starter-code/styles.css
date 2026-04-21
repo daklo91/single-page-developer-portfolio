@@ -492,4 +492,29 @@ footer {
     letter-spacing: -1.5px;
     margin-bottom: 14px;
   }
+
+  #project-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #project-section h2 {
+    line-height: 72px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--color-primary);
+    letter-spacing: -2.05px;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 60px;
+  }
+
+  .project-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .project-links {
+    margin-bottom: 68px;
+  }
 }
