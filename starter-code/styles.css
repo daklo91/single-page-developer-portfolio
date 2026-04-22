@@ -342,6 +342,48 @@ h1 > span {
   border-color: var(--color-accent);
 }
 
+#contact-name:user-invalid,
+#contact-email:user-invalid,
+#contact-message:user-invalid {
+  border-color: var(--color-warning);
+}
+
+.input-container {
+  position: relative;
+}
+
+.warning-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+
+#contact-name:user-invalid + .warning-icon,
+#contact-email:user-invalid + .warning-icon,
+#contact-message:user-invalid + .warning-icon {
+  display: block;
+}
+
+#contact-section .error-message {
+  color: var(--color-warning);
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.17px;
+  display: none;
+}
+
+#contact-name:user-invalid ~ .error-message,
+#contact-email:user-invalid ~ .error-message,
+#contact-message:user-invalid ~ .error-message {
+  display: block;
+}
+
 .submit-button-container {
   display: flex;
   align-content: flex-end;
@@ -372,6 +414,7 @@ input[type="submit"]:hover {
 form {
   position: relative;
   z-index: 20;
+  width: 100%;
 }
 
 .rings-detail-contact {
@@ -636,6 +679,7 @@ footer {
   .project-card-grid {
     column-gap: 30px;
     row-gap: 69px;
+    margin-bottom: 139px;
   }
 
   .project-tags {

@@ -250,31 +250,55 @@
           </p>
         </div>
         <form>
-          <label class="sr-only" for="contact-name">Name</label
-          ><input
-            placeholder="NAME"
-            type="text"
-            id="contact-name"
-            name="contact-name"
-            required
-          />
-          <label class="sr-only" for="contact-email">Email</label
-          ><input
-            placeholder="EMAIL"
-            type="email"
-            id="contact-email"
-            name="contact-email"
-            required
-          />
-          <label class="sr-only" for="contact-message">Message</label
-          ><textarea
-            placeholder="MESSAGE"
-            type="text"
-            id="contact-message"
-            name="contact-message"
-            rows="4"
-            required
-          ></textarea>
+          <div class="input-container">
+            <label class="sr-only" for="contact-name">Name</label
+            ><input
+              placeholder="NAME"
+              type="text"
+              id="contact-name"
+              name="contact-name"
+              required
+            />
+            <img
+              class="warning-icon"
+              src="./assets/images/icon-warning.svg"
+              alt=""
+            />
+            <p class="error-message">A name is required</p>
+          </div>
+          <div class="input-container">
+            <label class="sr-only" for="contact-email">Email</label
+            ><input
+              placeholder="EMAIL"
+              type="email"
+              id="contact-email"
+              name="contact-email"
+              required
+            />
+            <img
+              class="warning-icon"
+              src="./assets/images/icon-warning.svg"
+              alt=""
+            />
+            <p class="error-message">Sorry, invalid format here</p>
+          </div>
+          <div class="input-container">
+            <label class="sr-only" for="contact-message">Message</label
+            ><textarea
+              placeholder="MESSAGE"
+              type="text"
+              id="contact-message"
+              name="contact-message"
+              rows="4"
+              required
+            ></textarea>
+            <img
+              class="warning-icon"
+              src="./assets/images/icon-warning.svg"
+              alt=""
+            />
+            <p class="error-message">Message required</p>
+          </div>
           <input type="submit" value="SEND MESSAGE" />
         </form>
       </div>
