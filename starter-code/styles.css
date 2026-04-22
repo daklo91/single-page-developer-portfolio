@@ -709,5 +709,15 @@ footer {
       left: -205px;
       top: -110px;
     }
+
+    footer {
+      padding-bottom: 92px;
+    }
+
+    .footer-container {
+      max-width: 1110px;
+      margin: auto;
+      padding-top: 47px;
+    }
   }
 }
