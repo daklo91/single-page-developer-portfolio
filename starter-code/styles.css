@@ -667,5 +667,47 @@ footer {
     .project-card:hover img {
       opacity: 25%;
     }
+
+    .contact-section-container {
+      display: flex;
+      gap: 220px;
+    }
+
+    #contact-section {
+      padding-top: 84px;
+      padding-bottom: 53px;
+    }
+
+    #contact-section h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      text-align: left;
+    }
+
+    #contact-section p {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: var(--color-primary-muted);
+      text-align: left;
+    }
+
+    .contact-section-container {
+      max-width: 1110px;
+    }
+
+    .contact-section-text {
+      max-width: 445px;
+    }
+
+    .rings-detail-contact {
+      left: -205px;
+      top: -110px;
+    }
   }
 }
